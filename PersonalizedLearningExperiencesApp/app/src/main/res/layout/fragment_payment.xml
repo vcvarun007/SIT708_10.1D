@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/cardDetailsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Card Details"
+        android:textColor="#070707"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <!-- CardInputWidget -->
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/cardDetailsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardDetailsTV"
+        android:layout_marginTop="40dp"
+        app:cardHintText="Card number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buyNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardDetailsInput"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button"
+        android:padding="8dp"
+        android:text="Buy Now"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

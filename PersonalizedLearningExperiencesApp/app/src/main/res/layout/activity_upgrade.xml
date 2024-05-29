@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59D0FD"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/upgradeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Upgrade"
+        android:textColor="#070707"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yourExpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upgradeTV"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="20dp"
+        android:text="your experience"
+        android:textColor="#070707"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewStarter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yourExpTV"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#4254B4"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Content inside CardView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/starterTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starter"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ImprovedQuizGenTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="40dp"
+                android:text="Improved Quiz generation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/purchaseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:text="Purchase"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewStarter"
+        android:layout_centerHorizontal="true" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewIntermediate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_container"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#4254B4"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Content inside CardView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/intermediateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bseller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#43A1F0"
+                android:layout_marginLeft="250dp"
+                android:text="Best Seller!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ImprovedQuizGenTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="40dp"
+                android:text="Improved Quiz generation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/purchaseButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ImprovedQuizGenTV2"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:text="Purchase"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAdvanced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewIntermediate"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#4254B4"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Content inside CardView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/advancedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advanced"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ImprovedQuizGenTV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="40dp"
+                android:text="Improved Quiz generation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/purchaseButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ImprovedQuizGenTV3"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:text="Purchase"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
